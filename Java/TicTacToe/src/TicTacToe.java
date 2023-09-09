@@ -111,8 +111,7 @@ public class TicTacToe {
         System.out.print("\nEnter a number between 1 and " + size * size + ": ");
         String input = sc.nextLine();
         // check if input is a number
-        Pattern p = Pattern.compile("^[0-9]+$");
-        Matcher m = p.matcher(input);
+        Matcher m = Pattern.compile("^[0-9]+$").matcher(input);
         if (!(m.find())) {
             System.out.print("\nInvalid input. ");
             return askPos(sc, board, size);
