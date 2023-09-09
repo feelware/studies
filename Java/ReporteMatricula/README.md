@@ -9,5 +9,6 @@ Simple terminal program that simulates UNMSM' student enrollment system and outp
 ---
 On project root directory `ReporteMatricula/` run:
 ```bash
+$ javac src/main/*.java 
 $ java -cp src main.App
 ```
