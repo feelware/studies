@@ -1,28 +1,28 @@
-package src.main.recibos;
+package com.recibos;
 
-import src.main.App;
+import com.App;
 
-public class Honorario extends Recibo {
-    private String codigoColegio;
+public class Factura extends Recibo {
+    private String ruc;
     private float montoImpuesto;
-
-    public Honorario() {
+    
+    public Factura() {
         super();
-        codigoColegio = scanCodigoColegio();
+        ruc = scanRuc();
         montoImpuesto = calcMontoImpuesto(getMontoBruto());
         montoNeto = getMontoBruto() - montoImpuesto;
     }
 
     public String getRuc() {
-        return codigoColegio;
+        return ruc;
     }
 
     public float getMontoImpuesto() {
         return montoImpuesto;
     }
 
-    private static String scanCodigoColegio() {
-        System.out.print("\nIngrese código de colegiatura\n> ");
+    private static String scanRuc() {
+        System.out.print("\nIngrese RUC\n> ");
         return App.sc.nextLine();
     }
 

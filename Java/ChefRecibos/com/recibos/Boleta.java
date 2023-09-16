@@ -1,4 +1,4 @@
-package src.main.recibos;
+package com.recibos;
 
 public class Boleta extends Recibo {
     public Boleta() {

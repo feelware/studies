@@ -1,6 +1,6 @@
-package src.main.recibos;
+package com.recibos;
 
-import src.main.App;
+import com.App;
 
 public abstract class Recibo {
     private String emisorNombre;

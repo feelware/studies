@@ -1,10 +1,13 @@
-package src.main;
+package com;
 
 import java.util.Scanner;
+
+import com.recibos.Boleta;
+import com.recibos.Factura;
+import com.recibos.Honorario;
+
 import java.util.List;
 import java.util.ArrayList;
-
-import src.main.recibos.*;
 
 public class App {
     private static List<Object> recibos = new ArrayList<Object>();
