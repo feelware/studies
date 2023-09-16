@@ -1,6 +1,6 @@
 package src.main.recibos;
 
-import src.main.Sistema;
+import src.main.App;
 
 public class Factura extends Recibo {
     private String ruc;
@@ -23,7 +23,7 @@ public class Factura extends Recibo {
 
     private static String scanRuc() {
         System.out.print("\nIngrese RUC\n> ");
-        return Sistema.sc.nextLine();
+        return App.sc.nextLine();
     }
 
     private static float calcMontoImpuesto(float montoBruto) {

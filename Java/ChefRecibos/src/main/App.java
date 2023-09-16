@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 import src.main.recibos.*;
 
-public class Sistema {
+public class App {
     private static List<Object> recibos = new ArrayList<Object>();
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {

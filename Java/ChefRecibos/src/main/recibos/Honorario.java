@@ -1,6 +1,6 @@
 package src.main.recibos;
 
-import src.main.Sistema;
+import src.main.App;
 
 public class Honorario extends Recibo {
     private String codigoColegio;
@@ -23,7 +23,7 @@ public class Honorario extends Recibo {
 
     private static String scanCodigoColegio() {
         System.out.print("\nIngrese código de colegiatura\n> ");
-        return Sistema.sc.nextLine();
+        return App.sc.nextLine();
     }
 
     private static float calcMontoImpuesto(float montoBruto) {

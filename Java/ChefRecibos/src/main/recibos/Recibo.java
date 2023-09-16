@@ -1,6 +1,6 @@
 package src.main.recibos;
 
-import src.main.Sistema;
+import src.main.App;
 
 public abstract class Recibo {
     private String emisorNombre;
@@ -32,16 +32,16 @@ public abstract class Recibo {
 
     private static String scanEmisorNombre() {
         System.out.print("\nIngrese el nombre del emisor\n> ");
-        return Sistema.sc.nextLine();
+        return App.sc.nextLine();
     }
 
     private static String scanFecha() {
         System.out.print("\nIngrese la fecha\n> ");
-        return Sistema.sc.nextLine();
+        return App.sc.nextLine();
     }
 
     private static float scanMontoBruto() {
         System.out.print("\nIngrese el monto a pagar\n> ");
-        return Float.parseFloat(Sistema.sc.nextLine());
+        return Float.parseFloat(App.sc.nextLine());
     }
 }
