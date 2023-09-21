@@ -8,7 +8,7 @@ favouriteMovieGenre("space")
 favouriteFruit("blueberry")
 
 // light, dark
-favouriteMode("light")
+favouriteMode("dark")
 
 // sharp, soft, round
 favouriteEdgeStyle("sharp")
@@ -38,16 +38,6 @@ function favouriteMode(mode) {
         setProp('--background', "var(--light)");
         setProp('--text', "var(--dark)");
     } else if (mode === "dark") {
-        setProp('--background', "var(--dark)");
-        setProp('--text', "var(--light)");
-    }
-}
-
-function toggleTheme() {
-    if (getComputedStyle(document.documentElement).getPropertyValue('--background') === "var(--dark)") {
-        setProp('--background', "var(--light)");
-        setProp('--text', "var(--dark)");
-    } else {
         setProp('--background', "var(--dark)");
         setProp('--text', "var(--light)");
     }
