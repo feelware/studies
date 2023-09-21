@@ -43,6 +43,14 @@ function favouriteMode(mode) {
     }
 }
 
+function toggleTheme() {
+    if (getComputedStyle(document.documentElement).getPropertyValue('--background') === "var(--dark)") {
+        favouriteMode("light")
+    } else {
+        favouriteMode("dark")
+    }
+}
+
 function favouriteFruit(theme) {
     if (theme === "pastel") {
         setProp('--light', "#f2f6c3")
