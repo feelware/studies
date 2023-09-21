@@ -45,9 +45,11 @@ function favouriteMode(mode) {
 
 function toggleTheme() {
     if (getComputedStyle(document.documentElement).getPropertyValue('--background') === "var(--dark)") {
-        favouriteMode("light")
+        setProp('--background', "var(--light)");
+        setProp('--text', "var(--dark)");
     } else {
-        favouriteMode("dark")
+        setProp('--background', "var(--dark)");
+        setProp('--text', "var(--light)");
     }
 }
 
